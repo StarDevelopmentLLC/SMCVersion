@@ -29,6 +29,9 @@ publishing {
     publications {
         maven(MavenPublication) {
             from components.shadow
+//            artifact("build/libs/${project.name}-${project.version}-sources.jar") {
+//                classifier = "sources"
+//            }
         }
     }
 }
@@ -37,6 +40,9 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
     }
+
+//    withJavadocJar()
+//    withSourcesJar()
 }
 
 dependencies {
@@ -51,14 +57,25 @@ tasks.named('shadowJar', ShadowJar) {
     archiveClassifier = ''
 }
 
+//tasks.named('sourcesJar', Jar) {
+//    archiveClassifier.set("sources")
+//    from sourceSets.main.allSource
+//
+//    subprojects { subproject ->
+//        from subproject.sourceSets.main.allSource
+//    }
+//}
+
 tasks.compileJava.dependsOn(clean)
 tasks.jar.finalizedBy(shadowJar)
 tasks.build.finalizedBy(publishToMavenLocal)
 
 tasks.withType(PublishToMavenLocal).configureEach {
     dependsOn(shadowJar)
+//    dependsOn(sourcesJar)
 }
 
 tasks.withType(PublishToMavenRepository).configureEach {
     dependsOn(shadowJar)
+//    dependsOn(sourcesJar)
 }
