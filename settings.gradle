@@ -1,0 +1,9 @@
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.9.0'
+}
+
+rootProject.name = 'SMCVersion'
+include('common')
+include('v1_8')
+include('v1_9_2')
+include('v1_13_2')
