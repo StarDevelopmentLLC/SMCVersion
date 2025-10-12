@@ -1,4 +1,4 @@
-package com.stardevllc.smcversions.v1_8;
+package com.stardevllc.smcversion.v1_8;
 
 import com.stardevllc.smcversion.wrappers.EnchantWrapper;
 import org.bukkit.enchantments.Enchantment;

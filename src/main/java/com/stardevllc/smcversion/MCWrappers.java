@@ -2,9 +2,9 @@ package com.stardevllc.smcversion;
 
 import com.stardevllc.smcversion.v1_13_2.EnchantWrapper_1_13_2;
 import com.stardevllc.smcversion.v1_13_2.ItemWrapper_1_13_2;
+import com.stardevllc.smcversion.v1_8.*;
 import com.stardevllc.smcversion.v1_9_2.PlayerHandWrapper_1_9_2;
 import com.stardevllc.smcversion.wrappers.*;
-import com.stardevllc.smcversions.v1_8.*;
 
 public final class MCWrappers {
     private MCWrappers() {}

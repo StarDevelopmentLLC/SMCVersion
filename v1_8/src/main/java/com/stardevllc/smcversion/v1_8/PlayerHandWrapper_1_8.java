@@ -1,4 +1,4 @@
-package com.stardevllc.smcversions.v1_8;
+package com.stardevllc.smcversion.v1_8;
 
 import com.stardevllc.smcversion.wrappers.PlayerHandWrapper;
 import org.bukkit.entity.Player;
