@@ -12,21 +12,20 @@ version = '0.1.0'
 repositories {
     mavenLocal()
     mavenCentral()
-    maven { url = 'https://repo.stardevllc.com/releases'}
 }
 
 publishing {
     repositories {
         maven {
-            name="stardev"
-            url="https://repo.stardevllc.com/releases"
+            name = "stardev"
+            url = "https://repo.stardevllc.com/releases"
             credentials(PasswordCredentials)
             authentication {
                 basic(BasicAuthentication)
             }
         }
     }
-    
+
     publications {
         maven(MavenPublication) {
             from components.shadow
