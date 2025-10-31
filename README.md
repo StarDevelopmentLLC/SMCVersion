@@ -11,7 +11,7 @@ A simple library for Minecraft Versions, some wrappers based on Versions and som
 ```xml
 <dependency>
     <groupId>com.stardevllc</groupId>
-    <artifactId>StarLib</artifactId>
+    <artifactId>SMCVersion</artifactId>
     <version>{VERSION}</version>
     <scope>provided</scope>
 </dependency>
@@ -21,7 +21,7 @@ A simple library for Minecraft Versions, some wrappers based on Versions and som
 maven { url 'https://repo.stardevllc.com/releases' }
 ```
 ```groovy
-compileOnly 'com.stardevllc:StarLib:{VERSION}'
+compileOnly 'com.stardevllc:SMCVersion:{VERSION}'
 ```
 ## Usage
 ### MinecraftVersion
