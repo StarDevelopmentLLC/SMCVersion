@@ -25,7 +25,7 @@ compileOnly 'com.stardevllc:StarLib:{VERSION}'
 ```
 ## Usage
 ### MinecraftVersion
-This enum allows for version checking
-The `MinecraftVersion.CURREN_VERSION` gets the current version that is detected
+This enum allows for version checking  
+The `MinecraftVersion.CURRENT_VERSION` gets the current version that is detected
 ## MCWrappers
 This is a collection of wrappers do to things across versions
